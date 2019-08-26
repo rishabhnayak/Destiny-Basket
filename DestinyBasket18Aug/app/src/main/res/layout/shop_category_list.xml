@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:gravity="center">
+
+    <android.support.design.card.MaterialCardView
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sukha Sweets"
+                android:id="@+id/scname"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sukha Sweets"
+                    android:id="@+id/scid"
+                    android:visibility="invisible"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sukha Sweets"
+                    android:id="@+id/sccid"
+                    android:visibility="invisible"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chevron_right_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </android.support.design.card.MaterialCardView>
+
+</LinearLayout>

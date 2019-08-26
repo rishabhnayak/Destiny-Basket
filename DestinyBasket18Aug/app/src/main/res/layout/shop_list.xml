@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:gravity="center">
+
+    <android.support.design.card.MaterialCardView
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:background="@drawable/imagesquarcircle"
+                android:elevation="3dp"
+                android:id="@+id/shopListImage"
+                android:layout_width="120dp"
+                android:layout_height="100sp"
+                android:src="@drawable/image_1"/>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginTop="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/shopListName"
+                    android:layout_height="wrap_content"
+                    android:text="Shop Name"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/design_default_color_primary"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shopListTime"
+                    android:text="6 AM to 6PM"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shopnumber"
+                    android:visibility="invisible"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shopnum"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ratingsquarcircle"
+                    android:padding="3dp"
+                    android:id="@+id/shopListRate"
+                    android:elevation="3dp"
+                    android:text="4.5"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+                <ImageView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_drop_down"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sin"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </android.support.design.card.MaterialCardView>
+
+</LinearLayout>

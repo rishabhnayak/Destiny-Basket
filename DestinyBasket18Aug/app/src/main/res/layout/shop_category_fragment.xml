@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.smarteist.autoimageslider.SliderLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/imageSlider"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/imageSlider"
+                    android:id="@+id/li">
+                    <android.support.design.card.MaterialCardView
+
+                        android:elevation="24dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_below="@+id/tran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_shop_black_24dp"
+                            android:layout_marginLeft="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="KIshor shop"
+                        android:id="@+id/shopn"
+                        android:textSize="16sp"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:background="#000"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:id="@+id/call">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_call_black_24dp"
+                                android:layout_marginLeft="8dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:id="@+id/shopnu"
+                                android:text="6264577315"
+                                android:textSize="16sp"/>
+                        </LinearLayout>
+
+
+
+                    </android.support.design.card.MaterialCardView>
+                </LinearLayout>
+
+
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recscat"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/li"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp">
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</RelativeLayout>

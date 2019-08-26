@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+>
+    <item android:title="Advanced">
+
+
+        <menu>
+
+
+
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Home"
+            android:icon="@drawable/home"
+            android:id="@+id/home">
+
+        </item>
+
+        <item
+            android:title="My Profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:id="@+id/profile">
+
+        </item>
+        <item
+            android:title="My Wish List"
+            android:icon="@drawable/ic_favorite_black_24dp">
+
+        </item>
+        <item
+            android:title="My Cart"
+            android:icon="@drawable/ic_add_shopping_cart_black_24dp"
+            android:id="@+id/cart">
+        </item>
+        <item
+            android:title="My Orders"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:id="@+id/order">
+
+        </item>
+        <item
+            android:title="My wallet"
+            android:icon="@drawable/ic_payment_black_24dp"
+            android:id="@+id/wallet">
+        </item>
+        <item
+            android:title="My Payments"
+            android:icon="@drawable/ic_payment_black_24dp"
+            android:id="@+id/payment">
+        </item>
+
+
+        <item
+            android:title="Share and Earn"
+            android:icon="@drawable/share_boxed"
+            android:id="@+id/shareearn">
+        </item>
+
+
+        <item
+            android:title="Logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:id="@+id/logout"
+            >
+        </item>
+
+
+    </group>
+
+
+
+
+
+
+</menu>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gradientbackground"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:elevation="8dp">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.CardView
+        android:id="@+id/wallethai"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="5dp"
+        android:layout_below="@id/appbar"
+        android:layout_height="150dp"
+        app:cardElevation="4dp"
+        android:outlineSpotShadowColor="#000"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_account_balance_wallet_black_24dp"
+                android:drawablePadding="8dp"
+                android:text="Your Balance"
+                android:textSize="20sp" />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/colorPrimary"/>
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rs"
+                    android:layout_marginTop="21dp"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/mpw"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="25sp"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:id="@+id/recenttext"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/wallethai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recent Payments"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000"
+        android:textSize="20sp"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myprecy"
+        android:layout_below="@+id/recenttext">
+    </android.support.v7.widget.RecyclerView>
+
+    <!--<LinearLayout-->
+        <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:layout_marginBottom="-70dp"-->
+    <!--android:background="@drawable/ovalshap">-->
+    l
+</RelativeLayout>
